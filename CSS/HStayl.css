@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    background-color: #F7F8FC;
+}
+
+.header {
+    height: 55px;
+    width: 90%;
+    position: fixed;
+    background-color: rgba(0, 0, 255, 0.507);
+    top: 0;
+    z-index: 100;
+    right: 50%;
+    transform: translate(50%, 0);
+    border-radius: 30px;
+}
+
+.logo {
+    height: 50px;
+    width: 75px;
+    padding-left: 100px;
+    float: left;
+}
+
+.airlog {
+    padding-left: 10px;
+    float: left;
+    font-size: 22px;
+    color: white;
+    margin-top: 15px;
+}
+
+.list_header {
+    float: right;
+    margin-right: 100px;
+}
+
+.list_header li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.list_header li .hed {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.list_header li .hed:hover {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.search {
+    position: relative;
+    background-image: url(../images/scimage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    ;
+}
+
+.sc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 255, 0.507);
+}
+
+.sss {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sea {
+    border: none;
+    border-radius: 30px;
+    color: black;
+    font-size: 15px;
+    height: 45px;
+    padding-left: 50px;
+    position: relative;
+    float: left;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 0;
+}
+
+.seaicon {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    z-index: 1;
+    right: 70%;
+    margin-top: -9;
+}
+
+.seaicon:hover {
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.voiicon {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    position: absolute;
+    z-index: 1;
+    right: 28%;
+    margin-top: -9;
+}
+
+.voiicon:hover {
+    color: rgba(0, 0, 0, 0.547);
+}
+
+.imgact {
+    border-radius: 10px;
+    height: 275px;
+    width: 215px;
+    object-fit: cover;
+    float: left;
+    padding-left: 30;
+    transition: transform 1s;
+
+}
+.imgact:hover{
+    transform: scale(1.3,1.3);
+
+}
+.pp1 {
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.pp2 {
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    margin-left: 245px;
+}
+
+.pp3 {
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    margin-left: 489px;
+}
+
+.pp4 {
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    margin-left: 735px;
+}
+
+.pp5 {
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(1, 1, 87);
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    margin-left: 980px;
+}
+
+.FH {
+    top: 40%;
+    position: relative;
+    background-image: url(../images/fpb.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.title:hover {
+    color: rgba(255, 68, 0, 0.926);
+}
+
+.FBbar1 {
+    height: 55px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: 5;
+}
+
+.list_header2 {
+    float: left;
+}
+
+.list_header2 li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.list_header2 li .hed2 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.list_header2 li .hed2:hover {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+
+.list_header2 li .hed2:focus {
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+
+/* ////////////////////////////// */
+
+
+.D {
+    color: white;
+    font-size: 14px;
+    margin-top: -13px;
+    font-weight: bold;
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.502);
+    
+}
+
+.D .ftdField {
+    margin-right: 32px;
+    margin-left: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.D label {
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.search-wrap {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.D .ftdField .search-wrap .icon-location2 {
+    font-size: 20px;
+    color: #000000a2;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.D .ftdField .search-wrap .form-control {
+    border: 3px solid;
+    padding-left: 36px;
+    padding-right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 400;
+    height: 44px;
+    color: black;
+    border: none;
+}
+.D .ftdField .search-wrap .form-control:focus {
+    border: 3px solid #FEC524;
+}
+.D .ftdField .search-wrap .swap{
+    font-size: 25px;
+    color:white;
+    margin-left: -270px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -11px;
+}
+.D .ftdField .search-wrap .swap:hover{
+    color:  #FEC524;
+    font-size: 26px;
+}
+
+.datepicker{
+    display: block;
+    position: relative;
+}
+.D .dateField .datepicker .icon-calender{
+    font-size: 20px;
+    color: #000000a2;
+    left: 49%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+}
+.D .dateField .datepicker .form-control{
+    border: 3px solid;
+    transition: all .2s;
+    padding-left: 36px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    height: 44px;
+    color: rgba(0, 0, 0, 0.685);    
+    font-size: 17px;
+    float: left;
+}
+
+.D .dateField .datepicker .form-control:focus{
+    border: 3px solid #FEC524;
+}
+
+.D .custom-search .btn-sm{
+    margin: 0;
+    color: black;
+    font-weight: bold;
+    background-color: #FEC524;
+    padding: 14px;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 5px;
+    border: #FEC524;
+    width: 150px;
+}
+.D .custom-search .btn-sm:hover{
+    color:#F7F8FC;
+    font-size: 18px;
+}

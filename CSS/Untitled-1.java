@@ -1,0 +1,15 @@
+import javax.swing.*; import javax.swing.JFrame; import javax.swing.JButton; import javax.swing.JTextField; import javax.swing.JLabel; import java.awt.event.ActionEvent; import java.awt.event.ActionListener;   public class bmicalc extends javax.swing.JFrame {      bmicalc() {         JFrame f = new JFrame();//creating new instance of JFrame       
+    JLabel lblheight = new JLabel("Height(Inches) :");         lblheight.setBounds(20, 20, 100, 40);//passing parameters to setbound as in order x axis, y axis, width, height     
+    f.add(lblheight); //adding component in JFrame we pass componentname as parameter 		 
+    JTextField txtHeight = new JTextField("");//text field for entring the height   
+    txtHeight.setBounds(120, 20, 200, 40);         f.add(txtHeight);           JLabel lblweight = new JLabel("Weight(Pounds) :");//lbl for weight     
+    lblweight.setBounds(20, 60, 100, 40);         f.add(lblweight);                    JTextField txtWeight = new JTextField("");//text field for entring weight      
+    txtWeight.setBounds(120, 60, 200, 40);         f.add(txtWeight);  		 		JLabel res = new JLabel("** BMI Calculator **");         res.setBounds(20, 90, 300, 40);         f.add(res);                    JButton btn = new JButton("Calculate");//creating instance of JButton for button calculate     
+    btn.setBounds(20, 130, 100, 40);          		 		JButton btn2 = new JButton("Reset");//creating instance of JButton  for button reset     
+    btn2.setBounds(180, 130, 100, 40); 		 		         //Event handeling for Calculate button    
+    btn.addActionListener(new ActionListener(){             @Override             public void actionPerformed(ActionEvent e) {                                  double weight=Double.parseDouble(txtWeight.getText());                 double height=Double.parseDouble(txtHeight.getText());                                  double bmiresult = weight / Math.pow(height, 2) * 703;                   if (bmiresult < 18.5)  				 {                      res.setText("underweight - BMI : "+bmiresult);                  }  				 else if (bmiresult < 25)  				 {                      res.setText("normal - BMI : "+bmiresult);                  }  				 else if (bmiresult < 30) 			     {                      res.setText("overweight - BMI : "+bmiresult);                  } 				 else  				 {                      res.setText("obese - BMI : "+bmiresult);                  }             } 	}); 		//Event handeling for Reset button 	
+    btn2.addActionListener(new ActionListener(){             @Override             public void actionPerformed(ActionEvent e) { 				res.setText("**Reset is clicked**"); 				txtHeight.setText(""); 				txtWeight.setText("");             } 	}); 		          f.add(btn);//adding button in JFrame   
+    f.add(btn2);// adding button reset in jframe  
+    f.setSize(400, 300);         f.setLayout(null);         f.setVisible(true);      }      public static void main(String[] args) {         new bmicalc();//creating an instance of class bmicalc   
+    } }
+    
